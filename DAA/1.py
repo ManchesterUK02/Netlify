@@ -34,7 +34,7 @@ non_recursive_time = timeit.timeit(lambda: fibonacci(N), number=RUNS)
 print(f"Time taken: {non_recursive_time} seconds\n" "Time Complexity: O(n)\n" "Space Complexity: O(1)\n")
 
 # Time measurement for recursive Fibonacci
-print("Recursive: \n"  "The nth term of Fibonacci number is:", fibonacci(N))
+print("Recursive: \n"  "The nth term of Fibonacci number is:", fibonacci_recursive(N))
 recursive_time = timeit.timeit(lambda: fibonacci_recursive(N), number=RUNS)
 print(f"Time taken: {recursive_time} seconds\n" "Time Complexity: O(2^n)\n" "Space Complexity: O(n)\n")
 
